@@ -1,0 +1,67 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+.navbar
+    background-color: #fff
+    &__menu-button
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 0
+    &__logo
+        text-align: center
+        &-text
+            margin-bottom: 3px
+            font-size: 18px
+            display: block
+            +bold
+            text-transform: uppercase
+    &__mobile
+        text-align: right
+    &__landline
+        text-align: right
+    &__phone
+        margin-bottom: 3px
+        display: block
+        font-size: 19px
+        +bold
+        text-decoration: none
+        color: rgb(0,0,0)
+    &__work-time
+    &__mail
+        text-decoration: none
+
+
+
+.menu
+    display: fixed
+    top: 80px
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: $primary
+    // transition: .5s
+    &-wrap
+        background-color: $primary
+    &-nav
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 100%
+        &__link
+            padding: 16px 0
+            text-decoration: none
+            text-transform: uppercase
+            color: #ffffff
+            +light
+    &-non-active
+        // transition: .5s
+        transform: translateY(-200px)
+
+.small-text
+    font-size: 14px
+    color: #7b7b79
+    +light
